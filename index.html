@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Style+Script&family=Teko:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Review App</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="primary-header">Review App <span class="borderline"></span></h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="img-box">
+                <img src="img/pic1.jpg" alt="pic-1" class="img" id="img">
+                <div class="quote-box">
+                    <svg class="quote">
+                        <use xlink:href = 'img/sprite.svg#icon-quote'></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="name">
+                <h2 class="secondary-header" id="author">Bill Hendarson</h2>
+            </div>
+            <div class="job">
+                <h3 class="tertiary-header" id="job">
+                    Web Designer
+                </h3>
+            </div>
+            <div class="review">
+                <p class="paragraph" id="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam eaque, a numquam, saepe iste rem quae magni asperiores illum iure commodi vel voluptatum itaque pariatur quas consequuntur quidem? Rem.
+                </p>
+            </div>
+            <div class="btn-group">
+                <div>
+                    <svg class="icon" id="prevBtn">
+                        <use xlink:href='img/sprite.svg#icon-chevron-thin-left'></use>
+                    </svg>
+                </div>
+                <div>
+                <svg class="icon" id="nextBtn">
+                    <use xlink:href='img/sprite.svg#icon-chevron-thin-right'></use>
+                </svg>
+                </div>
+            </div>
+            <div class="randNumb" id="randNumb">Surprise Me</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

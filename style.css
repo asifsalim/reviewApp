@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6e8e9;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: #ffcad4; */
+    height: 40vh;
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icon,.quote{
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.primary-header{
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    color: #212529;
+    letter-spacing: 5px;
+    /* position: relative; */
+    /* margin: 0 auto; */
+
+}
+
+.primary-header::before{
+    content:'';
+    background: #00b4d8;
+    display: block;
+    height: 1rem;
+    width: 12rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+
+.card{
+    background-color: #f5f7f8;
+    width: 40rem;
+    height: auto;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.img-box{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    background: #00b4d8;
+    position: relative;
+    margin-top: 1rem;
+
+}
+
+.img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 1%;
+    left: -7%;
+}
+
+.quote-box{
+    width: 4rem;
+    height: 4rem;
+    background:#00b4d8 ;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: -10%;
+}
+.quote{
+    fill: #fff;
+}
+
+
+.secondary-header{
+    font-size: 3rem;
+    font-family: 'MonteCarlo', cursive;
+    letter-spacing: 2px;
+}
+.tertiary-header{
+    font-size: 2.5rem;
+    font-family: 'Teko', sans-serif;
+    color: #00b4d8;
+    letter-spacing: 3px;
+}
+
+.paragraph{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Style Script', cursive;
+    text-transform: capitalize;
+}
+
+.btn-group{
+    display: flex;
+    /* background: yellowgreen; */
+    width: 7rem;
+    justify-content: space-around;
+    margin: 1rem 0;
+
+}
+
+.icon{
+    fill: #48bfe3;
+}
+
+.randNumb{
+    font-family: 'Teko', cursive;
+    font-size: 2.5rem;
+    background-color: #48bfe3;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.35);
+    transition: all .3s;
+
+
+}
+
+.randNumb:active{
+    transform: scale(.9);
+}
