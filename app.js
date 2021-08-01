@@ -3,7 +3,7 @@ const review = [{
     name : 'John Dalton',
     job : 'Web Developer',
     img : 'img/pic1.jpg',
-    text : 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  making it look like readable English.'
+    text : 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.'
 },
 {
     id : 1,
@@ -24,7 +24,7 @@ const review = [{
     name : 'Sirajuddoula Nobab',
     job : 'Owner/President',
     img : 'img/pic4.jpg',
-    text : 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right'
+    text : 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart'
 
 }]
 

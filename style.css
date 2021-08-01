@@ -14,24 +14,31 @@ html{
 body{
     background-color: #e6e8e9;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* background-color: #ffcad4; */
     height: 40vh;
     width: 45rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@media only screen and (max-width: 70rem) {
+   .container{
+    height: 100%;
+   }
+  }
 
 
+.header{
+    margin-bottom: 10rem;
+}
 
 .icon,.quote{
     height: 2rem;
@@ -42,28 +49,55 @@ body{
     font-family: 'Teko', sans-serif;
     font-size: 5rem;
     text-transform: uppercase;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-10%);
     color: #212529;
     letter-spacing: 5px;
-    /* position: relative; */
-    /* margin: 0 auto; */
 
 }
-
-.primary-header::before{
+.primary-header::after{
     content:'';
     background: #00b4d8;
     display: block;
     height: 1rem;
     width: 12rem;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-100%);
+    margin: 0 auto;
 }
+@media only screen and (max-width: 70rem) {
+    .primary-header{
+        font-size: 3.8rem;
+    }
+    .primary-header::after{
+        margin-top: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 50rem) {
+    .primary-header{
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+    .primary-header::after{
+        width: 10rem;
+    }
+  }
+  @media only screen and (max-width: 30rem) {
+    .primary-header{
+        font-size: 2.3rem;
+        letter-spacing: 0;
+    }
+    .primary-header::after{
+        width: 7rem;
+    }
+
+    .card{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container{
+        width: auto;
+    }
+  }
+
+
 
 .card{
     background-color: #f5f7f8;
@@ -75,7 +109,14 @@ body{
     flex-direction: column;
     justify-content: space-around;
     padding: 0 2rem;
+    margin-top: 2rem;
+    text-align: center;
 }
+@media only screen and (max-width: 70rem) {
+    .header{
+        margin-bottom: 5rem;
+    }
+  }
 .img-box{
     width: 12rem;
     height: 12rem;
@@ -163,3 +204,4 @@ body{
 .randNumb:active{
     transform: scale(.9);
 }
+
